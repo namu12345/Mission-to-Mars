@@ -94,10 +94,10 @@ def mars_facts():
 
     # Assign columns and set index of dataframe
     df.columns=['Description', 'Mars', 'Earth']
-    #df.set_index('Description', inplace=True)
+    df.reset_index(drop= True, inplace=True)
 
     # Convert dataframe into HTML format, add bootstrap
-    return df.to_html(classes="table table-striped")
+    return df.to_html(classes="table table-dark")
 
 def mars_hemispheres(browser):
     url = 'https://marshemispheres.com/'

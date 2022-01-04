@@ -10,27 +10,29 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
     <style>
-      h2 {color: chocolate;}
-      h4 {color:lightcoral ;}
+      h2 {color: brown; font-weight: bold;}
+      h4 {color:brown; font-weight: bold;}
     </style>
   </head>
-  <body style="background: black;">
+  <body style="background-image: linear-gradient(yellow,orangered,yellow);">
     <div class="container">
+      <form class="bg-dark" style="font-family: inherit; font-size: 1rem;">
       <!-- Add Jumbotron to Header -->
-      <div style="background:goldenrod;" class="jumbotron text-center">
-        <h1 style="color:red;">Mission to Mars</h1>
+      <div style="background-image:radial-gradient(yellow, orangered);" class="jumbotron text-center">
+        <h1 style="color:orangered; font-weight: bold;">Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" style= "background-color:goldenrod; border:outset; color:brown; font-weight: bold; text-shadow: chocolate; ">Scrape New Data</a></p>
+        <p><a class="btn btn-dark btn-lg" href="/scrape" type="button" style="background:rgb(241, 112, 64) ; font-weight: bold;">Scrape New Data</a></p>
+      </form>
       </div>
 
       <!-- Add section for Mars News -->
       <div class="row" id="mars-news">
         <div class="col-md-12">
           <div class="media">
-            <div style="color:lightcoral;" class="media-body">
+            <div style="color:orangered;" class="media-body">
               <h2>Latest Mars News</h2>
-              <h4 style="color:greenyellow;" class="media-heading">{{ mars.news_title }}</h4>
-              <p>{{ mars.news_paragraph }}</p>
+              <h4 style="color:brown; font-style:italic;" class="media-heading">{{ mars.news_title }}</h4>
+              <p style="color: green">{{ mars.news_paragraph }}</p>
             </div>
           </div>
         </div>
@@ -44,16 +46,16 @@
           <!-- if images is False/None/non-existent, then default to error message -->
           <img
             src="{{mars.featured_image | default('static/images/error.png', true) }}"
-            class="img-responsive"
+            style="border: brown;" class="img-responsive"
             alt="Responsive image"
           />
         </div>
 
         <div class="col-md-4">
           <!-- Mars Facts -->
-          <div style="color:lightcoral; background-color: white" class="row" id="mars-facts">
-            <h4>Mars Facts</h4>        
-            {{ mars.facts | safe }}        
+          <div class="row" id="mars-facts">
+            <h3 style="text-align: center; font-weight: bold; color: brown;">Mars Facts</h3>       
+            <h4 class="table table-dark">{{ mars.facts | safe }}</h4>
           </div>
         </div>
       </div>
@@ -69,7 +71,7 @@
           <div class="thumbnail">
             <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
             <div class="caption">
-              <h3 style="color:goldenrod; background-color: black;">{{hemisphere.title}}</h3>
+              <h3 style="color:brown; background-image:radial-gradient(yellow, orangered) ; font-weight: bold;">{{hemisphere.title}}</h3>
             </div>
           </div>
         </div>
