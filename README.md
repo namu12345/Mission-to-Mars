@@ -29,7 +29,7 @@ The mission with this project was to learn web scraping methods to extract infor
 - Jupyter Notebook, VS Code, MongoDB, Flask and Chrome
 
 ## Final Results:
-As mentioned earlier the mission of this project was to scrape data using related tools which will automate the web browsing which I did in my [scrapping.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/scraping.py). So, after the scraping has been completed, I did updated the Mongo Database that contains the information about full-resolution images and titles for the four hemisphere images. All this we can see in the following url which I initiated from my [app.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/app.py) and I also styled my page using [index.html](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/templates/index.html)
+As mentioned earlier the mission of this project was to scrape data using related tools which will automate the web browsing which I did in my [scrapping.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/scraping.py). So, after the scraping has been completed, I did updated the **Mongo Database** that contains the information about full-resolution images and titles for the four hemisphere images. All this we can see in the following url which I initiated from my [app.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/app.py) and I also styled my page using [index.html](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/templates/index.html)
 
 
 ![image](https://user-images.githubusercontent.com/92283185/148243677-e6ed0714-f90d-41ab-9863-ea4ea3c41941.png)
