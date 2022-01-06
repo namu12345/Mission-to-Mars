@@ -29,9 +29,24 @@ The mission with this project was to learn web scraping methods to extract infor
 - Jupyter Notebook, VS Code, MongoDB, Flask and Chrome
 
 ## Final Results:
-As mentioned earlier the mission of this project was to scrape data using related tools which will automate the web browsing which I did in my [scrapping.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/scraping.py). So, after the scraping has been completed, I did updated the **Mongo Database** that contains the information about full-resolution images and titles for the four hemisphere images. All this we can see in the following url which I initiated from my [app.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/app.py) and as required I managed to **use Bootstrap components** by adding class **thumbnail** and class **col-md-3** to mars hemisphere images, also tried to style **Scrape New Data button** by using form style of Bootstrap and also i changed the Mars Facts table class to **table-dark**  which gave clean look to my **Mars Facts table**. All this I have coded in my [index.html](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/templates/index.html)
 
+In the result section I can mention by saying that after the scraping has been completed, the web app contains all the information from this module and the full-resolution images and titles for the four hemisphere images. The **[scrapping.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/scraping.py)** file contains code that retrieves the full-resolution image URL and title for each hemisphere image. **The Mongo database** is also updated to contain the full-resolution image URL and title for each hemisphere image. The **[index.html](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/templates/index.html)** file **contains that code** which will display the full-resolution image URL and title for each hemisphere image. And so in all by running **[app.py](https://github.com/namu12345/Mission-to-Mars/blob/main/Mars_Scraping/app.py)** file we can see following web app :
 
 ![image](https://user-images.githubusercontent.com/92283185/148243677-e6ed0714-f90d-41ab-9863-ea4ea3c41941.png)
 ![image](https://user-images.githubusercontent.com/92283185/148243874-fa2ba7cc-fcbc-49c5-b72a-2c7399eb66c6.png)
+
+In Deliverable 3 it required us to check if webpage is mobile responsive which is as shown below :
+
+![image](https://user-images.githubusercontent.com/92283185/148322423-e1629bf1-1fbf-4c4a-a37b-5314a091d632.png)
+
+I also tried to manage to **use Bootstrap components** by adding class **thumbnail** and class **col-md-3** to mars hemisphere images which gave me the images in horizontal : 
+![image](https://user-images.githubusercontent.com/92283185/148324706-daecef96-fadf-4790-b9ed-94b0d84a8bf3.png)
+
+Also I tried to style **Scrape New Data button** by using form style of Bootstrap:
+![image](https://user-images.githubusercontent.com/92283185/148324917-85f4e1d2-6bd1-4634-9c9e-09fec0d27f85.png)
+
+Further I changed the Mars Facts table class to **table-dark**  which gave clean look to my **Mars Facts table**
+
+![image](https://user-images.githubusercontent.com/92283185/148324965-d5f150f1-1521-48fb-b9e8-d02359b02bc8.png)
+
 
