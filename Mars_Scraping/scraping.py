@@ -7,13 +7,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 def scrape_all():
-    # Initiate headless driver for deployment
+    
+    # Initiate headless driver for deployment:
     executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=True)
 
     news_title, news_paragraph = mars_news(browser)
     hemisphere = mars_hemispheres(browser) 
-    # Run all scraping functions and store results in a dictionary
+    # Run all scraping functions and store results in a dictionary:
     data = {
         "news_title": news_title,
         "news_paragraph": news_paragraph,
